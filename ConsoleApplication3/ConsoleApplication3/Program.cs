@@ -10,41 +10,28 @@ namespace ConsoleApplication3
     {
         static void Main(string[] args)
         {
-            string x, y, z;
             Console.WriteLine("Enter number one");
-            x = Console.ReadLine();
+            int x = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter number two");
-            y = Console.ReadLine();
+            int y = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter number three");
-            z = Console.ReadLine();
+            int z = Convert.ToInt32(Console.ReadLine());
 
-            int q = Convert.ToInt32(x);
-            int w = Convert.ToInt32(y);
-            int e = Convert.ToInt32(z);
-            int m;
-
-            if (q > w)
+           if (x > y)
             {
-                m = q;
-                Console.WriteLine("Biggest number is: " + x);
+            Console.WriteLine("Biggest number is: " + x);
             }
 
-            else if (e > w)
+            else if (z > y)
             {
-
-                m = e;
                 Console.WriteLine("Biggest number is: " + z);
             }
 
             else
             { 
-                m = w;
             Console.WriteLine("Biggest number is: " + y);
             } 
-                
             
-            
-
             Console.ReadKey();
         } 
     }
