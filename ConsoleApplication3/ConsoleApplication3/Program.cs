@@ -10,7 +10,7 @@ namespace ConsoleApplication3
     {
         static void Main(string[] args)
         {
-           string x, y, z;
+            string x, y, z;
             Console.WriteLine("Enter number one");
             x = Console.ReadLine();
             Console.WriteLine("Enter number two");
@@ -21,21 +21,31 @@ namespace ConsoleApplication3
             int q = Convert.ToInt32(x);
             int w = Convert.ToInt32(y);
             int e = Convert.ToInt32(z);
+            int m;
 
-            if (q > w && q > e)
+            if (q > w)
             {
+                m = q;
                 Console.WriteLine("Biggest number is: " + x);
             }
-            else (w > q && w > e);
+
+            else if (e > w)
             {
-                Console.WriteLine("Biggest number is: " + y);
-            }
-            else (e > w && e > q);
-            {
+
+                m = e;
                 Console.WriteLine("Biggest number is: " + z);
             }
+
+            else
+            { 
+                m = w;
+            Console.WriteLine("Biggest number is: " + y);
+            } 
+                
             
+            
+
             Console.ReadKey();
-        }
+        } 
     }
 }
