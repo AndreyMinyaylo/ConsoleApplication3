@@ -26,11 +26,11 @@ namespace ConsoleApplication3
             {
                 Console.WriteLine("Biggest number is: " + x);
             }
-            if (w > q && w > e)
+            else (w > q && w > e);
             {
                 Console.WriteLine("Biggest number is: " + y);
             }
-            if (e > w && e > q)
+            else (e > w && e > q);
             {
                 Console.WriteLine("Biggest number is: " + z);
             }
