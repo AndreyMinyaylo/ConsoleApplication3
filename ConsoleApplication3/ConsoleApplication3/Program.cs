@@ -11,11 +11,11 @@ namespace ConsoleApplication3
         static void Main(string[] args)
         {
             Console.WriteLine("Enter number one");
-            int x = Convert.ToInt32(Console.ReadLine());
+            long x = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter number two");
-            int y = Convert.ToInt32(Console.ReadLine());
+            long y = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter number three");
-            int z = Convert.ToInt32(Console.ReadLine());
+            long z = Convert.ToInt32(Console.ReadLine());
 
            if (x > y)
             {
