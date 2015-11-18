@@ -18,7 +18,12 @@ namespace ConsoleApplication3
             int z = Convert.ToInt32(Console.ReadLine());
             string m;
 
-           if (x > y&&x > z) 
+            if (x == y && x == z)
+            {
+                Console.WriteLine("You enter same number " + x);
+            }
+
+            else if (x > y&&x > z) 
             {
                 /*string x = Convert.ToString("A");*/
                 m = "A";
@@ -36,6 +41,7 @@ namespace ConsoleApplication3
                 m = "B";
             Console.WriteLine("Biggest number is: "  + m);
             } 
+           
             
             Console.ReadKey();
         } 
