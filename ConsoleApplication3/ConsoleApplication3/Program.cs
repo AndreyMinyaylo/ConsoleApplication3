@@ -11,18 +11,18 @@ namespace ConsoleApplication3
         static void Main(string[] args)
         {
             Console.WriteLine("Enter number one");
-            long x = Convert.ToInt32(Console.ReadLine());
+            int x = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter number two");
-            long y = Convert.ToInt32(Console.ReadLine());
+            int y = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter number three");
-            long z = Convert.ToInt32(Console.ReadLine());
+            int z = Convert.ToInt32(Console.ReadLine());
 
-           if (x > y)
+           if (x > y&&x > z) 
             {
             Console.WriteLine("Biggest number is: " + x);
             }
 
-            else if (z > y)
+            else if (z > y&&z > y)
             {
                 Console.WriteLine("Biggest number is: " + z);
             }
