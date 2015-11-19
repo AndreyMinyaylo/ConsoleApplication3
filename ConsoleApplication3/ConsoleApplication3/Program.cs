@@ -18,9 +18,13 @@ namespace ConsoleApplication3
             int z = Convert.ToInt32(Console.ReadLine());
             string m;
 
-            if (x == y && x == z)
+            if (x == y && y == z || x == z)
             {
                 Console.WriteLine("You enter same number " + x);
+            }
+            else if(y == z || y == x)
+            {
+                Console.WriteLine("You enter same number " + y);
             }
 
             else if (x > y&&x > z) 
