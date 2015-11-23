@@ -16,44 +16,14 @@ namespace ConsoleApplication3
             int y = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter number three");
             int z = Convert.ToInt32(Console.ReadLine());
-            string m;
+            string m1,m2,m3;
 
-            if (x == y && x == z && y ==z )
+
+            if (x == y && x == z && y == z)
             {
                 Console.WriteLine("You enter same number " + x);
             }
-            
 
-            if (x == y && y == z || x == z)
-            {
-                Console.WriteLine("You enter same number " + x);
-            }
-            else if(y == z || y == x)
-            {
-                Console.WriteLine("You enter same number " + y);
-            }
-
-            if (x > y&&x > z) 
-            {
-              m = "A";
-            Console.WriteLine("Biggest number is: " + m );
-            }
-
-            else if (z > y&&z > y)
-            {
-                m = "C";
-                Console.WriteLine("Biggest number is: " + m);
-            }
-
-            else
-            {
-                m = "B";
-            Console.WriteLine("Biggest number is: "  + m);
-            }
-            if (x == y)
-            {
-                Console.WriteLine("You enter twice: A and B");
-            }
             else if (x == z)
             {
                 Console.WriteLine("You enter twice: A and C ");
@@ -62,7 +32,38 @@ namespace ConsoleApplication3
             {
                 Console.WriteLine("You enter twice: B and C ");
             }
+            else if (x == y)
+            {
+                Console.WriteLine("You enter twice: A and B");
+            }
 
+
+            else if (x > y&&x > z) 
+            {
+              m1 = "A";
+            Console.WriteLine("Biggest number is: " + m1 );
+            }
+
+            else if (z > y&&z > x)
+            {
+                m3 = "C";
+                Console.WriteLine("Biggest number is: " + m3);
+            }
+
+            else if (y>x&&y>z)
+            {
+                m2 = "B";
+            Console.WriteLine("Biggest number is: "  + m2);
+            }
+            
+            /*if (x == y && y == z || x == z)
+            {
+                Console.WriteLine("You enter same number " + x);
+            }
+            else if(y == z || y == x)
+            {
+                Console.WriteLine("You enter same number " + y);
+            }*/
             Console.ReadKey();
         } 
     }
