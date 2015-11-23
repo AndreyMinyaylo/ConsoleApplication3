@@ -18,6 +18,12 @@ namespace ConsoleApplication3
             int z = Convert.ToInt32(Console.ReadLine());
             string m;
 
+            if (x == y && x == z && y ==z )
+            {
+                Console.WriteLine("You enter same number " + x);
+            }
+            
+
             if (x == y && y == z || x == z)
             {
                 Console.WriteLine("You enter same number " + x);
@@ -27,10 +33,9 @@ namespace ConsoleApplication3
                 Console.WriteLine("You enter same number " + y);
             }
 
-            else if (x > y&&x > z) 
+            if (x > y&&x > z) 
             {
-                /*string x = Convert.ToString("A");*/
-                m = "A";
+              m = "A";
             Console.WriteLine("Biggest number is: " + m );
             }
 
@@ -44,11 +49,23 @@ namespace ConsoleApplication3
             {
                 m = "B";
             Console.WriteLine("Biggest number is: "  + m);
-            } 
-           
-            
+            }
+            if (x == y)
+            {
+                Console.WriteLine("You enter twice: A and B");
+            }
+            else if (x == z)
+            {
+                Console.WriteLine("You enter twice: A and C ");
+            }
+            else if (y == z)
+            {
+                Console.WriteLine("You enter twice: B and C ");
+            }
+
             Console.ReadKey();
         } 
     }
 }
 
+            
