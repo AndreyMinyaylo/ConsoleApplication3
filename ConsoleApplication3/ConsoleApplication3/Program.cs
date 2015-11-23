@@ -56,14 +56,7 @@ namespace ConsoleApplication3
             Console.WriteLine("Biggest number is: "  + m2);
             }
             
-            /*if (x == y && y == z || x == z)
-            {
-                Console.WriteLine("You enter same number " + x);
-            }
-            else if(y == z || y == x)
-            {
-                Console.WriteLine("You enter same number " + y);
-            }*/
+            
             Console.ReadKey();
         } 
     }
