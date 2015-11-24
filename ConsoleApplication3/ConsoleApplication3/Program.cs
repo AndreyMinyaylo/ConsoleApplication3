@@ -16,23 +16,29 @@ namespace ConsoleApplication3
             int y = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter number three");
             int z = Convert.ToInt32(Console.ReadLine());
-           
+            Console.WriteLine("Enter number four");
+            int q = Convert.ToInt32(Console.ReadLine());
 
 
-            if (x > y && x > z)
+            if (x > y && x > z&& x > q)
             {
                
                 Console.WriteLine("Biggest number is: " + x);
             }
-            else if (y > x && y > z)
+            else if (y > x && y > z && y > q)
             {
                
                 Console.WriteLine("Biggest number is: " + y);
             }
-            else if (z > y && z > x)
+            else if (z > y && z > x && z > q)
             {
                
                 Console.WriteLine("Biggest number is: " +z);
+            }
+            else if (q > x && q > y && q > z)
+            {
+
+                Console.WriteLine("Biggest number is: " + q);
             }
             else
             {
