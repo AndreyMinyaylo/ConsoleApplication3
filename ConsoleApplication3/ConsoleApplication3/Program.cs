@@ -36,7 +36,7 @@ namespace ConsoleApplication3
             }
             else
             {
-                Console.WriteLine(x);
+                Console.WriteLine("Same number is: " + x);
             }
             Console.ReadKey();
         } 
