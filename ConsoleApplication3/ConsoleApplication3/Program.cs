@@ -16,7 +16,7 @@ namespace ConsoleApplication3
             int y = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter number three");
             int z = Convert.ToInt32(Console.ReadLine());
-            string m;
+           
 
 
             if (x > y && x > z)
