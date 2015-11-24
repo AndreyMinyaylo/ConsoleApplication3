@@ -16,47 +16,51 @@ namespace ConsoleApplication3
             int y = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter number three");
             int z = Convert.ToInt32(Console.ReadLine());
-            string m1,m2,m3;
+            string m;
 
+
+            if (x > y && x > z)
+            {
+                m = "A";
+                Console.WriteLine("Biggest number is: " + m + " It is: " + x);
+            }
+            else if (y > x && y > z)
+            {
+                m = "B";
+                Console.WriteLine("Biggest number is: " + m + " It is: " + y);
+            }
+            else if (z > y && z > x)
+            {
+                m = "C";
+                Console.WriteLine("Biggest number is: " + m+" It is: "+z);
+            }
 
             if (x == y && x == z && y == z)
             {
                 Console.WriteLine("You enter same number " + x);
             }
 
-            else if (x == z)
+            else if (x == z&&x!=y)
             {
                 Console.WriteLine("You enter twice: A and C ");
+                Console.WriteLine("Biggest number is: " + x);
             }
-            else if (y == z)
+            else if (y == z&&y!=x)
             {
                 Console.WriteLine("You enter twice: B and C ");
+                Console.WriteLine("Biggest number is: " + y);
             }
-            else if (x == y)
+            else if (x == y && x != z)
             {
                 Console.WriteLine("You enter twice: A and B");
+                Console.WriteLine("Biggest number is: " + x);
             }
-
-
-            else if (x > y&&x > z) 
-            {
-              m1 = "A";
-            Console.WriteLine("Biggest number is: " + m1 );
-            }
-
-            else if (z > y&&z > x)
-            {
-                m3 = "C";
-                Console.WriteLine("Biggest number is: " + m3);
-            }
-
-            else if (y>x&&y>z)
-            {
-                m2 = "B";
-            Console.WriteLine("Biggest number is: "  + m2);
-            }
+        
             
+
+
             
+                     
             Console.ReadKey();
         } 
     }
