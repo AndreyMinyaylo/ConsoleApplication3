@@ -34,33 +34,10 @@ namespace ConsoleApplication3
                 m = "C";
                 Console.WriteLine("Biggest number is: " + m+" It is: "+z);
             }
-
-            if (x == y && x == z && y == z)
+            else
             {
                 Console.WriteLine("You enter same number " + x);
             }
-
-            else if (x == z&&x!=y)
-            {
-                Console.WriteLine("You enter same number in the A and C ");
-                Console.WriteLine("A and C is: " + x);
-            }
-            else if (y == z&&y!=x)
-            {
-                Console.WriteLine("You enter same number in the B and C ");
-                Console.WriteLine("B and C is: " + y);
-            }
-            else if (x == y && x != z)
-            {
-                Console.WriteLine("You enter same number in the A and B");
-                Console.WriteLine("A and B is: " + x);
-            }
-        
-            
-
-
-            
-                     
             Console.ReadKey();
         } 
     }
