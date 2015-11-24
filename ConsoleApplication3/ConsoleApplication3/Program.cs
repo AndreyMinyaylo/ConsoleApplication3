@@ -21,22 +21,22 @@ namespace ConsoleApplication3
 
             if (x > y && x > z)
             {
-                m = "A";
-                Console.WriteLine("Biggest number is: " + m + " It is: " + x);
+               
+                Console.WriteLine("Biggest number is: " + x);
             }
             else if (y > x && y > z)
             {
-                m = "B";
-                Console.WriteLine("Biggest number is: " + m + " It is: " + y);
+               
+                Console.WriteLine("Biggest number is: " + y);
             }
             else if (z > y && z > x)
             {
-                m = "C";
-                Console.WriteLine("Biggest number is: " + m+" It is: "+z);
+               
+                Console.WriteLine("Biggest number is: " +z);
             }
             else
             {
-                Console.WriteLine("You enter same number " + x);
+                Console.WriteLine(x);
             }
             Console.ReadKey();
         } 
