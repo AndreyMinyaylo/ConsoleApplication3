@@ -16,29 +16,29 @@ namespace ConsoleApplication3
             int y = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter number three");
             int z = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter number four");
+            int n = Convert.ToInt32(Console.ReadLine());
+            int max;
+
+            max = x;
+
+            if ( y > max)
+            {
+                max = y;
+            }
+            if (z > max)
+            {
+                max = z;
+            }
+            if (n > max)
+            {
+                max = n;
+            }
+
+            Console.WriteLine("Biggest number is: " + max);
+        
             
-            if (x > y)
-            {
-                if (x > z)
-                {
-                    Console.WriteLine("Biggest number is: " + x);
-                }
-            }
-            if (y > x)
-            {
-                if (y > z)
-                {
-                    Console.WriteLine("Biggest number is: " + y);
-                }
-                
-            }
-            if (z > x)
-            {
-                if (z > x)
-                {
-                    Console.WriteLine("Biggest number is: " + z);
-                }
-            }
+
             Console.ReadKey();
         } 
     }
