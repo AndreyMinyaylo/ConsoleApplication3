@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMax2", "TestMax2\TestMa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMax3", "TestMax3\TestMax3.csproj", "{CBF136F2-D83B-461C-ADA9-D4CAAB93FD3F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUnit2", "TestUnit2\TestUnit2.csproj", "{433B7306-DF38-4183-9FD9-2A64D279A305}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{CBF136F2-D83B-461C-ADA9-D4CAAB93FD3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBF136F2-D83B-461C-ADA9-D4CAAB93FD3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBF136F2-D83B-461C-ADA9-D4CAAB93FD3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{433B7306-DF38-4183-9FD9-2A64D279A305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{433B7306-DF38-4183-9FD9-2A64D279A305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{433B7306-DF38-4183-9FD9-2A64D279A305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{433B7306-DF38-4183-9FD9-2A64D279A305}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
