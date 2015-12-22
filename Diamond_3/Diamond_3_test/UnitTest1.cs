@@ -9,6 +9,7 @@ namespace Diamond_3_test
         [TestMethod]
         public void TestMethod1()
         {
+
             var st = "  *'\n'" +
                      " ***'\n'" + 
                      "*****'\n'" +
@@ -16,7 +17,7 @@ namespace Diamond_3_test
                      "  *'\n'";
 
             string sr = string.Empty;
-
+            
             int i, j;
             for (i = 1; i <= 10; i++)
             {
@@ -32,7 +33,23 @@ namespace Diamond_3_test
                     }
                 }
                 /*sr = sr + "\n";*/
+
+                for (j = 20; j >= (1 + i); j--)
+                {
+                    if (j <= (20 - i + 1))
+                    {
+                        sr = sr + "*";
+                    }
+                    else
+                    {
+                        sr = sr + " ";
+                    }
+                }
+                
+
             }
+
+        }
         }
     }
-}
+
