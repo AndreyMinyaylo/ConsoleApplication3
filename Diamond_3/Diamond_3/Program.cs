@@ -24,10 +24,40 @@ namespace Diamond_3
                         Console.Write("*");
                     }
                 }
-                Console.Write("\r\n");
+                Console.Write("\n");
+            }
+            for (i = 1; i <= 20; i++)
+            {
+                /*for (j = 20; j >= (1 + i); j--)
+                {
+                    if (j <= (20 - i + 1))
+                    {
+                        Console.Write(" ");
+                    }
+                    else
+                    {
+                        Console.Write("*");
+                    }
+                }
+                Console.Write("\n");*/
+                Console.Write(" ");
+
+                for (j = 20; j >= (1 + i); j--)
+                {
+                    if (j <= (20 - i + 1))
+                    {
+                        Console.Write("*");
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+                }
+                Console.Write("\n");
+
             }
 
-                Console.ReadKey();
+            Console.ReadKey();
             }
         }
     }
