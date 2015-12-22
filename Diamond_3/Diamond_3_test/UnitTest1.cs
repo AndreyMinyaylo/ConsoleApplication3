@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Diagnostics;
 
 namespace Diamond_3_test
 {
@@ -9,6 +10,15 @@ namespace Diamond_3_test
         [TestMethod]
         public void TestMethod1()
         {
+            int x = Convert.ToInt32("2");
+            int y = Convert.ToInt32("2");
+            int max = Convert.ToInt32("5");
+            if (x == y)
+            {
+                max = x + y;
+            }
+            Assert.AreEqual(5, max);
+            Debug.Write("max");
 
             var st = "  *'\n'" +
                      " ***'\n'" + 
