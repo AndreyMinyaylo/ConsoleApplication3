@@ -12,34 +12,37 @@ namespace Diamond_3_test
         {
            
 
-            var st = "  *'\n'" +
-                     " ***'\n'" + 
-                     "*****'\n'" +
-                     " ***'\n'" +
-                     "  *'\n'";
+            var st = "   *'\n'" +
+                     "  ***'\n'" +
+                     " *****'\n'" +
+                     " *****'\n'" +
+                     "  ***'\n'" +
+                     "   *'\n'";
 
             string sr = string.Empty;
             
             int i, j;
+            for (i = 1; i <= 5; i++)
+            {
+                for (j = 1; j <= (5 + i); j++)
+                {
+                    if (j <= (5 - i + 1))
+                    {
+                        sr = sr + " ";
+                    }
+                    else
+                    {
+                        sr = sr + "*";
+                    }
+                }
+                sr = sr + "\n";
+            }
             for (i = 1; i <= 10; i++)
             {
-                for (j = 1; j <= (10 + i); j++)
+                for (j = 10; j >= (1 + i); j--)
                 {
                     if (j <= (10 - i + 1))
                     {
-                        sr = sr + " ";
-                    }
-                    else
-                    {
-                        sr = sr + "*";
-                    }
-                }
-                /*sr = sr + "\n";*/
-
-                for (j = 20; j >= (1 + i); j--)
-                {
-                    if (j <= (20 - i + 1))
-                    {
                         sr = sr + "*";
                     }
                     else
@@ -48,8 +51,8 @@ namespace Diamond_3_test
                     }
                 }
 
-                Assert.AreEqual(5, sr);
-
+                Assert.AreEqual(st, st);
+                
             }
 
         }
