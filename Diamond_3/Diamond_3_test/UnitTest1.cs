@@ -12,24 +12,24 @@ namespace Diamond_3_test
         {
 
 
-            var st = "     *\n" +
-                     "    ***\n" +
-                     "   *****\n" +
-                     "  *******\n" +
-                     " *********\n" +
-                     "  *******\n" +
-                     "   *****\n" +
-                     "    ***\n" +
-                     "     *\n";
+            var st = "    *\n" +
+                     "   ***\n" +
+                     "  *****\n" +
+                     " *******\n" +
+                     "*********\n" +
+                     " *******\n" +
+                     "  *****\n" +
+                     "   ***\n" +
+                     "    *\n";
 
             string sr = string.Empty;
             
             int i, j;
             for (i = 1; i <= 5; i++)
             {
-                for (j = 1; j <= (5 + i); j++)
+                for (j = 1; j <= (5 + i - 1); j++)
                 {
-                    if (j <= (5 - i + 1))
+                    if (j <= (5 - i))
                     {
                         sr = sr + " ";
                     }
@@ -43,9 +43,9 @@ namespace Diamond_3_test
             for (i = 1; i <= 4; i++)
             {
                 sr = sr + " ";
-                for (j = 9; j >= (1 + i); j--)
+                for (j = 9; j >= (1 + i + 1); j--)
                 {
-                    if (j <= (9 - i ))
+                    if (j <= (9 - i + 1))
                     {
                         sr = sr + "*";
                     }

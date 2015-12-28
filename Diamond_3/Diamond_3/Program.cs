@@ -14,10 +14,10 @@ namespace Diamond_3
             
             for (i = 1; i <= 5; i++)
             {
-                for (j = 1; j <= (5 + i); j++)
+                for (j = 1; j <= (5 + i - 1); j++)
                 {
                     
-                    if (j <= (5 - i + 1 ))
+                    if (j <= (5 - i))
                     {
                         Console.Write(" ");
                        
@@ -34,10 +34,10 @@ namespace Diamond_3
 
                 Console.Write(" ");
 
-                for (j = 9; j >= (1 + i); j--)
+                for (j = 9; j >= (1 + i + 1); j--)
                 {
                     
-                    if (j <= (9 - i  ))
+                    if (j <= (9 - i+1  ))
                     {
                         Console.Write("*");
                     }
