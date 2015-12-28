@@ -29,7 +29,7 @@ namespace Diamond_3
                 }
                 Console.Write("\n");
             }
-            for (i = 1; i <= 9; i++)
+            for (i = 1; i <= 4; i++)
             {
 
                 Console.Write(" ");
