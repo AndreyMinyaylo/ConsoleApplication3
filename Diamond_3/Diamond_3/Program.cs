@@ -10,14 +10,17 @@ namespace Diamond_3
     {
         static void Main(string[] args)
         {
-            int  i, j;
+            int i, j;
+            
             for (i = 1; i <= 5; i++)
             {
-                for(j = 1; j <= (5 + i); j++)
+                for (j = 1; j <= (5 + i); j++)
                 {
-                    if(j <= (5 - i + 1))
+                    
+                    if (j <= (5 - i + 1 ))
                     {
                         Console.Write(" ");
+                       
                     }
                     else
                     {
@@ -26,25 +29,15 @@ namespace Diamond_3
                 }
                 Console.Write("\n");
             }
-            for (i = 1; i <= 10; i++)
+            for (i = 1; i <= 9; i++)
             {
-                /*for (j = 20; j >= (1 + i); j--)
-                {
-                    if (j <= (20 - i + 1))
-                    {
-                        Console.Write(" ");
-                    }
-                    else
-                    {
-                        Console.Write("*");
-                    }
-                }
-                Console.Write("\n");*/
+
                 Console.Write(" ");
 
-                for (j = 10; j >= (1 + i); j--)
+                for (j = 9; j >= (1 + i); j--)
                 {
-                    if (j <= (10 - i + 1))
+                    
+                    if (j <= (9 - i  ))
                     {
                         Console.Write("*");
                     }
@@ -58,10 +51,9 @@ namespace Diamond_3
             }
 
             Console.ReadKey();
-            }
         }
     }
+}
 
 
 
-     

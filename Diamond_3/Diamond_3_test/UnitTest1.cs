@@ -10,14 +10,17 @@ namespace Diamond_3_test
         [TestMethod]
         public void TestMethod1()
         {
-           
 
-            var st = "   *'\n'" +
-                     "  ***'\n'" +
-                     " *****'\n'" +
-                     " *****'\n'" +
-                     "  ***'\n'" +
-                     "   *'\n'";
+
+            var st = "    *\n" +
+                     "   ***\n" +
+                     "  *****\n" +
+                     " *******\n" +
+                     "*********\n" +
+                     " *******\n" +
+                     "  *****\n" +
+                     "   ***\n" +
+                     "    *\n";
 
             string sr = string.Empty;
             
@@ -37,8 +40,9 @@ namespace Diamond_3_test
                 }
                 sr = sr + "\n";
             }
-            for (i = 1; i <= 10; i++)
+            for (i = 1; i <= 5; i++)
             {
+                /*sr = sr + " ";*/
                 for (j = 10; j >= (1 + i); j--)
                 {
                     if (j <= (10 - i + 1))
@@ -50,10 +54,10 @@ namespace Diamond_3_test
                         sr = sr + " ";
                     }
                 }
+                sr = sr + "\n";
 
-                Assert.AreEqual(st, st);
-                
-            }
+               }
+            Assert.AreEqual(st, sr);
 
         }
         }
